@@ -1,0 +1,13 @@
+.myfont {
+    color: red;
+    background-color: skyblue;
+}
+
+.myfont2 {
+    color: blue;
+    background-color: yellow;
+}
+
+.myfont3 {
+    font-family: 'comic sans ms';
+}
