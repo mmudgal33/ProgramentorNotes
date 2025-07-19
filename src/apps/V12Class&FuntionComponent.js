@@ -10,16 +10,16 @@ export class V12ClassComponent extends React.Component {
 }
 
 //function component
-export function PropsV8Person(props) {
-    /* props.name="farhan";  cannot be done, prop can't change*/
+export function V12FunComponent() {
+    
     return (
         <>
-            <h1>hello {props.name}</h1>
+            <h1>Mohammad Adil</h1>
         </>
     );
 }
 
-//export default V12ClassComponent;
+
 
 
 
@@ -35,14 +35,3 @@ export function PropsV8Person(props) {
 //         )
 //     }
 // } 
-
-
-//index.js
-//import V12ClassComponent, {PropsV8Person} from './apps/V12ClassComponent'; 
-//import AliasNameExportDefault, {PropsV8Person} from './apps/V12ClassComponent'; 
-//import {V12ClassComponent,PropsV8Person} from './apps/V12ClassComponent'; 
-
-{/* <>
-    <V12ClassComponent />
-    <PropsV8Person name="mohit mudgal" />
-</> */}
