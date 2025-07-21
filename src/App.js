@@ -13,7 +13,23 @@ import './App.css';
 // import {V15ConstructorBasicsMyScript} from './apps/V15ConstructorBasicsMyScript';
 // import {V15ConstructorBasics,V15ConstructorBasicsMyScript} from './apps/V15ConstructorBasicsMyScript';
 // import {V16StatePropsDiffPassProps} from './apps/V16StatePropsDiffPassProps';
-import {V16StateBasedForm} from './apps/V16StateBasedForm';
+// import {V16StateBasedForm} from './apps/V16StateBasedForm';
+// import {V17DestructuringPropsAndStatePassingProps} from './apps/V17DestructuringPropsAndState';
+// import {V18EventsAndEventHandlingPassingProps} from './apps/V18EventsAndEventHandling';
+// import {V19BindingEventsPassingProps} from './apps/V19BindingEvents';
+// import {V22MountingPhasePassingProps} from './apps/V22MountingPhase';
+// import {V23Update1} from './apps/V23Update1';
+// import {V24UpdateOtherPassingProps} from './apps/V24UpdateOther';
+// import {V25UnmountingParent} from './apps/V25UnmountingParent';
+// import {V26MethodAsPropsParent} from './apps/V26MethodAsPropsChild';
+// import {V27ConditionalRenderingIFELSEClass} from './apps/V27ConditionalRenderingIFELSEClass';
+// import {V27ConditionalRenderingIFELSE} from './apps/V27ConditionalRenderingIFELSE';
+// import {V28ListRendering} from './apps/V28ListRendering';
+// import {V29ListWithKeys} from './apps/V29ListWithKeys';
+import {ListingCard} from './apps/ReactPractise';
+
+
+
 
 
 
@@ -29,12 +45,25 @@ function App() {
     {/* <V8PropsIndexFile/> */}
     {/* <V9ProptypesPropsPassing/> */}
     {/* <V10FunctionArrowComponent/> */}
-    
     {/* <V10Arrowfunction name='mohit' age='22'/> */}
     {/* <V13PropsInClassComponents3/> */}
     {/* <V15ConstructorBasicsMyScript/> */}
     {/* <V16StatePropsDiffPassProps/> */}
-    <V16StateBasedForm/>
+    {/* <V16StateBasedForm/> */}
+    {/* <V17DestructuringPropsAndStatePassingProps/> */}
+    {/* <V18EventsAndEventHandlingPassingProps/> */}
+    {/* <V19BindingEventsPassingProps/> */}
+    {/* <V22MountingPhasePassingProps/> */}
+    {/* <V23Update1/> */}
+    {/* <V24UpdateOtherPassingProps/> */}
+    {/* <V25UnmountingParent/> */}
+    {/* <V26MethodAsPropsParent/> */}
+    {/* <V27ConditionalRenderingIFELSEClass/> */}
+    {/* <V27ConditionalRenderingIFELSE/> */}
+    {/* <V28ListRendering/> */}
+    {/* <V29ListWithKeys/> */}
+    <ListingCard/>
+
     
     
   </>
@@ -43,7 +72,6 @@ function App() {
 }
 
 export default App;
-
 
 
 

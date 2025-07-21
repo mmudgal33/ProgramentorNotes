@@ -1,33 +1,48 @@
 import React, { Component } from 'react'
 import '../App.css';
 
+
+export function V24UpdateOtherPassingProps() {
+  /* props.name="farhan";  cannot be done, prop can't change*/
+  return (
+      <>
+          <V24UpdateOther name='mohita' />
+          
+      </>
+  );
+}
+
+
+
 //rcc,rconst,clg
-export default class V24UpdateOther extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         name:'mohit'
-      }
-      console.log('constructor called...')
+export class V24UpdateOther extends Component {
+  constructor(props) {
+    super(props)
+    console.log('constructor called...')
+
+    this.state = {
+      name: 'mohit'
     }
     
-    changeState = () => {
-        this.setState({
-            name:'mohini'
-        });
-        console.log('changeState button called...')
-    } 
+  }
 
-    static getDerivedStateFromProps(props, state) {
-        console.log('getDerivedStateFromProps called');
-        console.log(props);
-        console.log(state);
-        return null
+  changeState = () => {
+    console.log('changeState button called...')
+    this.setState({
+      name: 'mohini'
+    });
 
-    }
+  }
 
-  shouldComponentUpdate(nextProps,nextState){
+  static getDerivedStateFromProps(props, state) {
+    console.log('getDerivedStateFromProps called');
+    console.log(props);
+    console.log(state);
+    return null
+
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate called...');
     console.log(nextProps);
     console.log(nextState);
@@ -38,19 +53,23 @@ export default class V24UpdateOther extends Component {
   }
 
   //mohit(prevState), mohini(nextState)
-  getSnapshotBeforeUpdate(prevPops,prevState){
+  getSnapshotBeforeUpdate(prevPops, prevState) {
     console.log('getSnapshotBeforeUpdate called...');
     console.log(prevPops);
     console.log(prevState);
-    return 'hello';
+    return 'hello from getSnapshotBeforeUpdate called...';
   }
 
-  componentDidUpdate(prevPops,prevState,snapshot){
+  componentDidUpdate(prevPops, prevState, snapshot) {
     console.log('componentDidUpdate called...');
     console.log(prevPops);
     console.log(prevState);
     console.log(snapshot)
 
+  }
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount called...')
   }
 
   render() {

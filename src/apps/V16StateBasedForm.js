@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import Payalrohatgi from '../htmlNotes/files/payal rohatgi.jpg';
-import docxFile from '../htmlNotes/files/WebDevelopmentOpening.docx';
-import pdfFile from '../htmlNotes/files/WebDevelopmentOpening.pdf';
-import mp4File from '../htmlNotes/files/Destiny maylas.mp4';
-import mp3File from '../htmlNotes/files/Nazm Nazm.mp3';
+// import Payalrohatgi from '../htmlNotes/files/payal rohatgi.jpg';
+// import docxFile from '../htmlNotes/files/WebDevelopmentOpening.docx';
+// import pdfFile from '../htmlNotes/files/WebDevelopmentOpening.pdf';
+// import mp4File from '../htmlNotes/files/Destiny maylas.mp4';
+// import mp3File from '../htmlNotes/files/Nazm Nazm.mp3';
 
 
 // import TrivveniKaul from './files/Trivveni Kaul.jpg';
@@ -35,15 +35,15 @@ export class V16StateBasedForm extends Component {
             remarks: '',
             vehicle: '',
 
-            selectedFile: null,
-            downloadUrl: null,
+            // selectedFile: null,
+            // downloadUrl: null,
         }
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
 
-        this.handleFileChange = this.handleFileChange.bind(this);
-        this.downloadImage = this.downloadImage.bind(this);
+        // this.handleFileChange = this.handleFileChange.bind(this);
+        // this.downloadImage = this.downloadImage.bind(this);
 
 
     }
@@ -58,27 +58,27 @@ export class V16StateBasedForm extends Component {
     //     });
     // };
 
-    handleFileChange(e) {
-        const file = e.target.files;
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                this.setState({ selectedFile: file, downloadUrl: e.target.result });
-            };
-            reader.readAsDataURL(file);
-        }
-    }
+    // handleFileChange(e) {
+    //     const file = e.target.files;
+    //     if (file) {
+    //         const reader = new FileReader();
+    //         reader.onload = (e) => {
+    //             this.setState({ selectedFile: file, downloadUrl: e.target.result });
+    //         };
+    //         reader.readAsDataURL(file);
+    //     }
+    // }
 
-    downloadImage() {
-        if (this.state.downloadUrl) {
-            const link = document.createElement('a');
-            link.href = this.state.downloadUrl;
-            link.download = this.state.selectedFile.name;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    }
+    // downloadImage() {
+    //     if (this.state.downloadUrl) {
+    //         const link = document.createElement('a');
+    //         link.href = this.state.downloadUrl;
+    //         link.download = this.state.selectedFile.name;
+    //         document.body.appendChild(link);
+    //         link.click();
+    //         document.body.removeChild(link);
+    //     }
+    // }
 
 
     resetForm = (e) => {
@@ -306,21 +306,21 @@ export class V16StateBasedForm extends Component {
                             <td colSpan="1"><input type="file" name='file' id='file' onChange={this.handleChange} /></td>
                         </tr> */}
 
-                        <tr>
+                        {/* <tr>
                             <td><input type="file" accept="image/*" onChange={this.handleFileChange} /></td>
                             <td>{this.state.downloadUrl && (
                                 <button onClick={this.downloadImage}>Download Image</button>
                             )}</td>
 
-                        </tr>
+                        </tr> */}
 
-                        <tr>
+                        {/* <tr>
                             <p> <a href={Payalrohatgi}>click to open image</a> </p>
                             <p> <a href={docxFile}>click to open doc file</a> </p>
                             <p> <a href={pdfFile}>click to open pdf file</a> </p>
                             <p> <a href={mp4File}>click to open mp4 file</a> </p>
                             <p> <a href={mp3File}>click to open mp3 file</a> </p>
-                        </tr>
+                        </tr> */}
 
                         <tr>
                             <td colSpan="1"><button type="reset" onClick={() => this.resetForm()} >Reset</button></td>

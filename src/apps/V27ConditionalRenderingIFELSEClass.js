@@ -1,23 +1,44 @@
 import React, { Component } from 'react'
 import '../App.css';
-import V27ConditionalRenderingC1 from './V27ConditionalRenderingC1';
-import V27ConditionalRenderingC2 from './V27ConditionalRenderingC2';
+// import V27ConditionalRenderingC1 from './V27ConditionalRenderingC1';
+// import V27ConditionalRenderingC2 from './V27ConditionalRenderingC2';
 //rcc,rconst
 
-export default class V27ConditionalRenderingIFELSEClass extends Component {
+export function V26MethodAsPropsChildPassingProps() {
+  /* props.name="farhan";  cannot be done, prop can't change*/
+  return (
+      <>
+          <V27ConditionalRenderingIFELSEClass name='mohit'  />
+          
+      </>
+  );
+}
+
+
+
+export class V27ConditionalRenderingIFELSEClass extends Component {
     constructor(props) {
       super(props)
     
       this.state = {
-         name : this.props.name,
-         age : this.props.age
+         name1 : this.props.name,
+         name : 'mohit'
+
       }
+    }
+
+    changeState = () => {
+      this.setState({
+        // active: false
+        name: this.state.name==='mohita' ? 'mohit' : 'mohita'
+        
+      })
     }
     
   render() {
 
-    const name = this.props.name;
-    const age = this.props.age;
+    const name = this.state.name;
+    
     //let data;
     // if (name == 'mohit') { return <V27ConditionalRenderingC1 /> }
     // else { return <V27ConditionalRenderingC2 /> }
@@ -29,7 +50,8 @@ export default class V27ConditionalRenderingIFELSEClass extends Component {
         {/* {data} */}
         {/* { name == 'mohit' && <h1>hello mohit</h1>} */}
         {/* { name == 'mohit' ? <h1>hello mohit</h1> : <h1>who are you</h1>} */}
-        { name == 'mohit' ? <V27ConditionalRenderingC1/> : <V27ConditionalRenderingC2/>}
+        { name === 'mohit' ? <V27ConditionalRenderingC1/> : <V27ConditionalRenderingC2/>}
+        <button onClick={this.changeState}>change state</button>
     </div>
     )
   }
@@ -43,42 +65,20 @@ export default class V27ConditionalRenderingIFELSEClass extends Component {
 
 
 
-// index.js
-
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// //import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
-// //import V27ConditionalRenderingIFELSE from './apps/V27ConditionalRenderingIFELSE';
-// import V27ConditionalRenderingIFELSEClass from './apps/V27ConditionalRenderingIFELSEClass';
+export function V27ConditionalRenderingC1() {
+  return (
+    <div>
+      <h1 style={{color:'red'}}>hi mohit</h1>
+    </div>
+  )
+}
 
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// root.render(
-//   <>
-//   {/* <V27ConditionalRenderingIFELSE name = 'mohit' age = {23}/>
-//   <V27ConditionalRenderingIFELSE name = 'mohita' age = {29}/> */}
-//   <V27ConditionalRenderingIFELSEClass name = 'mohit' age = {23}/>
-//   <V27ConditionalRenderingIFELSEClass name = 'mohita' age = {29}/>
-//   </>
-// );
-
-// /* root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// ); */
-
-// // If you want to start measuring performance in your app, pass a function
-// // to log results (for example: reportWebVitals(console.log))
-// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
-
-
-// /* import FirstApp from './apps/FirstApp';
-// <FirstApp/>  */
-
+export function V27ConditionalRenderingC2() {
+  return (
+    <div>
+      <h1 style={{color:'blue'}}>hi mohita</h1>
+    </div>
+  )
+}
 
