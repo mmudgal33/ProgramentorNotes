@@ -8,7 +8,7 @@
 import React from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-function V33BootstrapCDN() {
+export function V33BootstrapCDN() {
   return (
     <div>
       <h1 className='bg-success text-white p-5'>welcome to learning never ends</h1>
@@ -16,4 +16,4 @@ function V33BootstrapCDN() {
   )
 }
 
-export default V33BootstrapCDN
+

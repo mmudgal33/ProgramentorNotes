@@ -3,7 +3,7 @@ import '../App.css';
 
 //rcc,rconst
 
-export default class V30StylingComponent extends Component {
+export class V30StylingComponent extends Component {
     constructor(props) {
         super(props)
 
@@ -19,14 +19,14 @@ export default class V30StylingComponent extends Component {
     }
 
     render() {
-        // let obj = {
-        //     color:'blue',
-        //     backgroundColor:'orange'
-        // }
-        // let obj2 = {
-        //     fontSize:'50px',
-        //     fontFamily:'cooper'
-        // }
+        let obj1 = {
+            color:'blue',
+            backgroundColor:'orange'
+        }
+        let obj2 = {
+            fontSize:'50px',
+            fontFamily:'cooper'
+        }
         let obj3 = {
             color: 'blue',
             backgroundColor: 'orange',
@@ -40,10 +40,10 @@ export default class V30StylingComponent extends Component {
         }
         return (
             <div className='App'>
-                <button style={obj3} onClick={this.changeState}>click me</button>
-                {/* <h1 style={{color:'red',backgroundColor:'yellow'}}>Learning Never Ends</h1> */}
-                {/* <h1 style={obj}>Learning Never Ends</h1> */}
-                {/* <h1 style={{...obj,...obj2}}>Learning Never Ends</h1> */}
+                <button style={obj3} onClick={this.changeState}>click me</button><hr />
+                <h1 style={{color:'red',backgroundColor:'yellow'}}>Learning Never Ends</h1><hr />
+                <h1 style={obj1}>Learning Never Ends</h1><hr />
+                <h1 style={{...obj1,...obj2}}>Learning Never Ends</h1><hr />
             </div>
         )
     }

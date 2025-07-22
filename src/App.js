@@ -26,8 +26,13 @@ import './App.css';
 // import {V27ConditionalRenderingIFELSE} from './apps/V27ConditionalRenderingIFELSE';
 // import {V28ListRendering} from './apps/V28ListRendering';
 // import {V29ListWithKeys} from './apps/V29ListWithKeys';
-import {ListingCard} from './apps/ReactPractise';
-
+// import {ListingCard} from './apps/ReactPractise';
+// import {V30StylingComponent} from './apps/V30StylingComponent';
+// import {V31CSSStyleSheetComponentPassingProps} from './apps/V31CSSStyleSheetComponent';
+// import {V32CSSModulesStylesheet} from './apps/V32CSSModulesStylesheet';
+// import {V33BootstrapCDN} from './apps/V33BootstrapCDN';
+// import {V34FunctionsHooksIntro} from './apps/V34FunctionsHooksIntro';
+import {V36UseStateHookWithObject} from './apps/V36UseStateHookWithObject';
 
 
 
@@ -62,7 +67,13 @@ function App() {
     {/* <V27ConditionalRenderingIFELSE/> */}
     {/* <V28ListRendering/> */}
     {/* <V29ListWithKeys/> */}
-    <ListingCard/>
+    {/* <ListingCard/> */}
+    {/* <V30StylingComponent/> */}
+    {/* <V31CSSStyleSheetComponentPassingProps/> */}
+    {/* <V32CSSModulesStylesheet/> */}
+    {/* <V33BootstrapCDN/> */}
+    {/* <V34FunctionsHooksIntro/> */}
+    <V36UseStateHookWithObject/>
 
     
     
