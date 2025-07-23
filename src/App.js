@@ -32,7 +32,13 @@ import './App.css';
 // import {V32CSSModulesStylesheet} from './apps/V32CSSModulesStylesheet';
 // import {V33BootstrapCDN} from './apps/V33BootstrapCDN';
 // import {V34FunctionsHooksIntro} from './apps/V34FunctionsHooksIntro';
-import {V36UseStateHookWithObject} from './apps/V36UseStateHookWithObject';
+// import {V36UseStateHookWithObject} from './apps/V36UseStateHookWithObject';
+// import {V38ClassStateAndFunctionState1} from './apps/V38ClassStateAndFunctionState';
+// import {V41UseContextHook} from './apps/V41UseContext/V41UseContextHook';
+// import {V41UseContextWithUseState} from './apps/V41UseContext/V41UseContextWithUseMemo';
+// import {V41UseContextWithUseState} from './apps/V41UseContext/V41UseContextWithUseState';
+// import {V42ClassControlledForm} from './apps/V42ClassFormHandling';
+import {V46FunctionControlledForm} from './apps/V46FunctionControlledForm';
 
 
 
@@ -73,7 +79,13 @@ function App() {
     {/* <V32CSSModulesStylesheet/> */}
     {/* <V33BootstrapCDN/> */}
     {/* <V34FunctionsHooksIntro/> */}
-    <V36UseStateHookWithObject/>
+    {/* <V36UseStateHookWithObject/> */}
+    {/* <V38ClassStateAndFunctionState1/>  */}
+    {/* <V41UseContextHook/>  */}
+    {/* <V41UseContextWithUseState/> */}
+    {/* <V41UseContextWithUseState/> */}
+    {/* <V42ClassControlledForm/> */}
+    <V46FunctionControlledForm/>
 
     
     
