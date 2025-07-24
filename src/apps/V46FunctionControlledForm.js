@@ -7,11 +7,13 @@ export function V46FunctionControlledForm() {
         name: 'mohit',
         city: 'kv',
         subjects: 'pcm',
-        country:'',
-        comments:'I am interested'
+        country: '',
+        comments: 'I am interested',
+        
     });
 
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(false);
+    const [hobbiesArray, setHobbiesArray] = useState([])
 
 
     // e.target.value..toLowerCase().substring(0,15).replace('&','-')
@@ -38,9 +40,8 @@ export function V46FunctionControlledForm() {
         // console.log(e.target.value);
         
         const { name, value } = e.target;
-        const new_value = (name === 'email') ? value.toLowerCase() : value ;
+        const new_value = (name === 'email') ? value.toLowerCase() : value;
 
-        
         setData((prev) => {
             return {
                 ...prev,
@@ -49,12 +50,26 @@ export function V46FunctionControlledForm() {
         })
     }
 
+    let handleCheckbox = (e) => {
+        const checked = e.target.checked;
+        const value = e.target.value;
+        if(checked){
+            setHobbiesArray([
+                ...hobbiesArray, value
+            ])
+
+        }else{
+            console.log(setHobbiesArray(hobbiesArray.filter((e)=>(e!==value))));
+            // setHobbiesArray(hobbiesArray.filter((e)=>(e!==value)));
+        }
+    }
+
 
     let handleFormSubmit = (e) => {
         e.preventDefault();
         // console.log(e)
         console.log([e.target[0].value, e.target[1].value, e.target[2].value, e.target[3].value, e.target[4].value, e.target[5].value]);
-        console.log(data, checked);
+        console.log(data, checked, hobbiesArray);
 
     }
 
@@ -79,15 +94,25 @@ export function V46FunctionControlledForm() {
                     <option value="INDIA">INDIA</option>
                 </select>
 
+                <br /><br />
+
+                <label>Select Hobbies: </label><br />
+                <label htmlFor="reading">reading</label>&nbsp;
+                <input type="checkbox" id='reading' value='reading' name='Hobbies'  onChange={handleCheckbox}/><br />
+                <label htmlFor="cycling">cycling</label>&nbsp;
+                <input type="checkbox" id='cycling' value='cycling' name='Hobbies' onChange={handleCheckbox}/><br />
+                <label htmlFor="hiking">hiking</label>&nbsp;
+                <input type="checkbox" id='hiking' value='hiking' name='Hobbies' onChange={handleCheckbox}/><br />
+
                 <br />
-                <label htmlFor="comments" style={{verticalAlign:'top'}}>comments:</label>
+                <label htmlFor="comments" style={{ verticalAlign: 'top' }}>comments:</label>
                 <textarea name="comments" id="comments" value={data.comments} cols="30" rows="5" onChange={handleChange}></textarea>
 
                 <br />
                 <label htmlFor="terms">yes i agree the terms &nbsp;</label>
-                <input type="checkbox" name="terms" id="terms" checked={checked} onChange={(e) => setChecked(e.target.checked)}/>
+                <input type="checkbox" name="terms" id="terms" checked={checked} onChange={(e) => setChecked(e.target.checked)} />
 
-                
+
 
                 <input type="submit" value="submit" />
             </form>
@@ -103,3 +128,4 @@ export function V46FunctionControlledForm() {
 //                     <option value=""></option>
 //                     <option value=""></option>
 //                 </select>
+
