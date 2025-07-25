@@ -56,3 +56,6 @@ export class V30StylingComponent extends Component {
 //here obj has scope of this component only
 //style={{...obj,...obj2}}, ecma script 6 spread operator
 //copy array/object to different array/object using spread operator, they sent as single array/object to style attribute
+
+
+
