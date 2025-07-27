@@ -13,8 +13,10 @@ import { Jeans } from './Jeans'
 import { Admin } from './Admin'
 import { Users } from './Users'
 import { UserDetails } from './UserDetails'
+import { Search } from './Search'
 
 import { PageNotFound } from './PageNotFound'
+
 
 
 
@@ -68,6 +70,8 @@ export const AppRouter = () => {
           <Route path=':id' element={<UserDetails />} />
           <Route path='Admin' element={<Admin />} />
         </Route>
+
+        <Route path='/Search' element={<Search />} />
 
 
         <Route path='*' element={<PageNotFound />} />
