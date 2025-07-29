@@ -11,7 +11,7 @@ import Payalrohatgi from './images/payal rohatgi.jpg';
 export function V77AddingImagesToReact() {
   return (
     <>
-      <div  style={{ color: 'blue', backgroundColor: 'pink', padding: '20px', fontSize: '20px', fontWeight: 'bold' }}>Images Demo</div>
+      <div style={{ color: 'blue', backgroundColor: 'pink', padding: '20px', fontSize: '20px', fontWeight: 'bold' }}>Images Demo</div>
       <img src={Payalrohatgi} height='600' alt="not found" /><br /><br />
       <img src={require( './images/Trivveni Kaul.jpg')} height='600' alt="not found" /><br /><br />
       {/* <img src='images/Meenakshi Kandwal.png' height='400' alt="not found" /> */}

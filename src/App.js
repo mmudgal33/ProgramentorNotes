@@ -50,7 +50,10 @@ import './App.css';
 // import {V73FormicCompBasedForm} from './apps/V68FormValidation/V73FormicCompBasedForm';
 // import {V75ReactBootstrapLibrary} from './apps/V75ReactBootstrapLibrary/V75ReactBootstrapLibrary';
 // import {V76ContainersAndGridSystem} from './apps/V75ReactBootstrapLibrary/V76ContainersAndGridSystem';
-import {V77AddingImagesToReact} from './apps/V75ReactBootstrapLibrary/V77AddingImagesToReact';
+// import {V77AddingImagesToReact} from './apps/V75ReactBootstrapLibrary/V77AddingImagesToReact';
+// import {V78CreateCardsUsingReactBootstrap} from './apps/V75ReactBootstrapLibrary/V78CreateCardsUsingReactBootstrap';
+// import {V79NavbarUsingReactBootstrap} from './apps/V75ReactBootstrapLibrary/V79NavbarUsingReactBootstrap';
+import {V80CreatingCarouselReactBootstrap} from './apps/V75ReactBootstrapLibrary/V80CreatingCarouselReactBootstrap';
 
 
 
@@ -110,7 +113,11 @@ function App() {
     {/* <V73FormicCompBasedForm/> */}
     {/* <V75ReactBootstrapLibrary/> */}
     {/* <V76ContainersAndGridSystem/> */}
-    <V77AddingImagesToReact/>
+    {/* <V77AddingImagesToReact/> */}
+    {/* <V78CreateCardsUsingReactBootstrap/> */}
+    {/* <V79NavbarUsingReactBootstrap/> */}
+    <V80CreatingCarouselReactBootstrap/>
+
 
     
     
