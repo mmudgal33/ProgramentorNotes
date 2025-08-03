@@ -53,7 +53,12 @@ import './App.css';
 // import {V77AddingImagesToReact} from './apps/V75ReactBootstrapLibrary/V77AddingImagesToReact';
 // import {V78CreateCardsUsingReactBootstrap} from './apps/V75ReactBootstrapLibrary/V78CreateCardsUsingReactBootstrap';
 // import {V79NavbarUsingReactBootstrap} from './apps/V75ReactBootstrapLibrary/V79NavbarUsingReactBootstrap';
-import {V80CreatingCarouselReactBootstrap} from './apps/V75ReactBootstrapLibrary/V80CreatingCarouselReactBootstrap';
+// import {V80CreatingCarouselReactBootstrap} from './apps/V75ReactBootstrapLibrary/V80CreatingCarouselReactBootstrap';
+// import {V81UseReducerHook} from './apps/V81UseReducerHook/V81UseReducerHook';
+// import {V82Promise} from './apps/V81UseReducerHook/V82Promise';
+// import {V83JavascriptAsynAwait} from './apps/V81UseReducerHook/V83JavascriptAsynAwait';
+// import {V84FetchAPI} from './apps/V81UseReducerHook/V84FetchAPI';
+import {V87AxiosRouting} from './apps/V81UseReducerHook/V87AxiosRouting';
 
 
 
@@ -116,7 +121,12 @@ function App() {
     {/* <V77AddingImagesToReact/> */}
     {/* <V78CreateCardsUsingReactBootstrap/> */}
     {/* <V79NavbarUsingReactBootstrap/> */}
-    <V80CreatingCarouselReactBootstrap/>
+    {/* <V80CreatingCarouselReactBootstrap/> */}
+    {/* <V81UseReducerHook/> */}
+    {/* <V82Promise/> */}
+    {/* <V83JavascriptAsynAwait/> */}
+    {/* <V84FetchAPI/> */}
+    <V87AxiosRouting/>
 
 
     
