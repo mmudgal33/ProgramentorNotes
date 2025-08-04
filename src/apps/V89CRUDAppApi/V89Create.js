@@ -1,15 +1,21 @@
 // https://mockapi.io/    create link below
 // https://688fb8c9f21ab1769f89f4c3.mockapi.io/crud
 
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
-export function V89AxiosRouting() {
+import { useNavigate } from 'react-router-dom';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+export function V89Create() {
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
     const [email, setEmail] = useState('');
 
     const [apiData, setApiData] = useState([]);
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,11 +24,11 @@ export function V89AxiosRouting() {
             e_age : age,
             e_email :email
 
-        });
+        }).then(() => { navigate('/'); })
 
     }
 
-    // .then(()=>{navigate('/');})
+    
 
     const handleReset = (e) => {
         setName('');
@@ -77,13 +83,13 @@ export function V89AxiosRouting() {
             {name} <br />
             {email} <br />
             {age} <br />
-            {JSON.stringify(apiData)}
+            {JSON.stringify(apiData, null, 2)}
         </>
     )
 }
 
-export default V87AxiosRouting
 
+// 'd-grid' for make button take all col place available
 
 // {JSON.stringify(data, null, 2)}
 

@@ -58,8 +58,10 @@ import './App.css';
 // import {V82Promise} from './apps/V81UseReducerHook/V82Promise';
 // import {V83JavascriptAsynAwait} from './apps/V81UseReducerHook/V83JavascriptAsynAwait';
 // import {V84FetchAPI} from './apps/V81UseReducerHook/V84FetchAPI';
-import {V87AxiosRouting} from './apps/V81UseReducerHook/V87AxiosRouting';
-
+// import {V87AxiosRouting} from './apps/V81UseReducerHook/V87AxiosRouting';
+// import {IndexRouter} from './apps/V89CRUDAppApi/IndexRouter';
+// import {IndexRedux} from './apps/V93ReactRedux/IndexRedux';
+import {IndexReduxToolkit} from './apps/V101ReduxToolkit/IndexReduxToolkit';
 
 
 
@@ -126,7 +128,10 @@ function App() {
     {/* <V82Promise/> */}
     {/* <V83JavascriptAsynAwait/> */}
     {/* <V84FetchAPI/> */}
-    <V87AxiosRouting/>
+    {/* <V87AxiosRouting/> */}
+    {/* <IndexRouter/> */}
+    {/* <IndexRedux/> */}
+    <IndexReduxToolkit/>
 
 
     
